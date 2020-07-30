@@ -1,6 +1,6 @@
 # Build environment for LineageOS
 
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER Michael Stucki <michael@stucki.io>
 
 
@@ -35,10 +35,11 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
       lib32readline-dev \
       lib32z1-dev \
       liblz4-tool \
+      libncurses5 \
       libncurses5-dev \
       libsdl1.2-dev \
       libssl-dev \
-      libwxgtk3.0-dev \
+      libwxgtk3.0-gtk3-dev \
       libxml2 \
       libxml2-utils \
       lzop \
